@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../../src/styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <section class="formSection">
+      <div>
+        <div class="header">
+          <h1 class="sectionTitle">Recuperar senha👽</h1>
+          <span class="sectionSubtitle">Preencha seus dados abaixo para recuperar sua senha. 👋</span>
+        </div>
+  
+      <form id="form">
+        <div class="form-element">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" placeholder="Ex.: José Oliveira Figueiredo" required>
+        </div>
+        <div class="form-element">
+          <label for="email">E-mail</label>
+        <input type="text" name="email" placeholder="seuemail@mail.com" required>
+        </div>
+        <div class="form-element">
+          <label for="telefone">Matrícula</label>
+        <input type="text" name="telefone" placeholder="00000000000" required>
+        </div>
+        
+        <a href="../../login.html" class="link-button">
+          <button type="submit" class="button">RECUPERAR</button>
+        </a>
+      </form>
+      </div>
+    </section>
+    <section class="heroSection">
+      
+    </section>
+  </div>
+  <script>
+    document.getElementById("form")
+      .addEventListener("submit", function(event) {
+    event.preventDefault();
+    })
+  </script>
+</body>
+</html>

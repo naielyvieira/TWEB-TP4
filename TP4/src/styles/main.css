@@ -1,0 +1,128 @@
+@import './global.css';
+
+body {
+  background: var(--white);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-element {
+  width: 100%;
+}
+.formSection {
+  margin: 0 4rem;
+  max-width: 540px;
+  width: 38vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.formSection form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formSection form input[type="date"],
+.formSection form input[type="text"],
+.formSection form input[type="password"] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: .5rem 0;
+}
+
+.formSection form label {
+  margin: 0 1rem 0 .4rem;
+  color: var(--gray-dark)
+}
+.interesses-content,
+.interesses{
+  width: 100%;
+}
+.label-alt {
+  width: 100%
+}
+.interesses-content div {
+  border: 1px solid var(--gray);
+  padding: .5rem;
+  margin: .3rem 0;
+  border-radius: .2rem;
+}
+.sexo {
+  display: flex;
+  align-items: center;
+}
+.interesses {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.heroSection{
+  background-size: cover;
+  min-height: calc(100vh);
+  background: url('../../assets/pattern.png');
+  width: 70vw;
+}
+.button{ 
+  margin-top: 1rem;
+  background: var(--violet);
+  border-radius: .4rem;
+  padding: .5rem 0;
+  width: 100%;
+  border: none;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.button:hover{
+  background: var(--violet-dark);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--black)
+}
+
+.sectionSubtitle {
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--gray-dark);
+}
+.header {
+  margin: 1rem 0;
+}
+.button-alt{
+  background: var(--white);
+  border: 1px solid var(--violet);
+  color: var(--violet);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: .5rem 0;
+  width: 100%;
+  border-radius: .4rem;
+  transition: all .3s ease-in-out;
+}
+.button-alt:hover {
+  background: var(--violet);
+  color: var(--white);
+}
+.discret-link{
+  color: var(--violet);
+  margin-top: 1rem;
+  transition: all .3s ease-in-out;
+}
+.link-button{
+  width: 100%;
+}

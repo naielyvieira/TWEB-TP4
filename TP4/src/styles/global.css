@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+
+:root {
+  --violet: #7c3aed;
+  --violet-dark: #6d28d9;
+  --white: #ffffff;
+  --white-dark: #fafafa;
+  --gray: #e4e4e7;
+  --gray-dark: #404040;
+  --black: #0a0a0a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .heroSection{
+    display: none;
+  }
+  #register {
+    margin-bottom: 8rem;
+  }
+  .formSection {
+    max-width: 1024px;
+    width: 60vw;
+    padding-top: 2rem;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}

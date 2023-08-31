@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../../src/styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <section class="formSection">
+      <div id="register">
+        <div class="header">
+          <h1 class="sectionTitle">Cadastro👽</h1>
+          <span class="sectionSubtitle">Preencha seus dados abaixo para continuar. 👋</span>
+        </div>
+  
+      <form id="form">
+        <div class="form-element">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" placeholder="Ex.: José Oliveira Figueiredo" required>
+        </div>
+        <div class="form-element">
+          <label for="email">E-mail</label>
+        <input type="text" name="email" placeholder="seuemail@mail.com" required>
+        </div>
+        <div class="form-element">
+          <label for="data-de-nascimento">Data de nascimento</label>
+        <input type="date" name="data-de-nascimento" placeholder="data" required>
+        </div>
+        <div class="form-element">
+          <label for="matricula">Matrícula</label>
+        <input type="text" name="matricula" placeholder="00000000000" required>
+        </div>
+        <div class="form-element">
+          <label for="senha">Senha</label>
+        <input type="password" name="senha" placeholder="******" required>
+        </div>
+        <div class="interesses">
+          <div class="label-alt">
+            <label for="nome">Sexo:</label>
+          </div>
+          <div class="interesses-content">
+            <div>
+              <input type="radio" id="masculino" name="masculino" value="masculino">
+              <label for="masculino">Masculino</label>
+            </div>
+            <div>
+            <input type="radio" id="feminino" name="feminino" value="feminino">
+            <label for="feminino">Feminino</label>
+          </div>
+          <div>
+            <input type="radio" id="outros" name="outros" value="outros">
+            <label for="outros">Caiu na rede é peixe</label>
+          </div>
+        </div>
+        </div>
+
+        <div class="interesses">
+          <div class="label-alt">
+            <label for="nome">Cursos:</label>
+          </div>
+          <div class="interesses-content">
+            <div>
+              <input type="radio" id="engenhariaE" name="engenhariaE" value="engenhariaE">
+              <label for="engenhariaE">Engenharia Elétrica</label>
+            </div>
+            <div>
+            <input type="radio" id="sistemas" name="sistemas" value="sistemas">
+            <label for="sistemas">Sistemas de Informação</label>
+          </div>
+          <div>
+            <input type="radio" id="mecatronica" name="mecatronica" value="mecatronica">
+            <label for="mecatronica">Mecatrônica</label>
+          </div>
+        </div>
+        </div>
+
+        <div class="interesses">
+          <div class="label-alt">
+            <label for="nome">Interesses:</label>
+          </div>
+          <div class="interesses-content">
+            <div>
+              <input type="checkbox" id="web" name="web" value="web">
+              <label for="web">Programação Web</label>
+            </div>
+            <div>
+            <input type="checkbox" id="design" name="design" value="design">
+            <label for="design">Design</label>
+          </div>
+          <div>
+            <input type="checkbox" id="dados" name="dados" value="dados">
+            <label for="dados">Ciência de dados</label>
+          </div>
+          <div>
+            <input type="checkbox" id="projetos" name="projetos" value="projetos">
+            <label for="projetos">Gerência de projetos</label>
+          </div>
+          <div>
+            <input type="checkbox" id="jogos" name="jogos" value="jogos">
+            <label for="jogos">Programação de jogos</label>
+          </div>
+        </div>
+        </div>
+        
+        <a href="./registrar-se.html" class="link-button">
+          <button type="submit" class="button">CADASTRAR-SE</button>
+        </a>
+        <a href="../../login.html" class="link-button">
+          <button class="button-alt" type="button" class="button">LOGIN</button>
+        </a>
+      </form>
+      </div>
+    </section>
+    <section class="heroSection">
+      
+    </section>
+  </div>
+  <script>
+    document.getElementById("form")
+      .addEventListener("submit", function(event) {
+    event.preventDefault();
+    })
+  </script>
+</body>
+</html>
